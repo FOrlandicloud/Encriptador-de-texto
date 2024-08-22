@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="">
+    </header>
+    <main>
+        <form class="form_section">
+            <textarea class="form_input" name="textoentrada" id="" cols="30" 
+                    rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="btn__container">
+                    <div class="mensaje_alerta">
+                        <img src="/assets/icono_advertencia.svg" alt="icono alerta"> 
+                        <span>Solo letras minúsculas y sin acentos</span>
+                    </div>
+                </div>
+                <div class="submit__container">
+                    <input class="form__btn" type="submit" value="Encriptar">
+                    <input class="form__btn__secundary" type="submit" value="Desencriptar">
+                </div>           
+        </form>
+        <aside class="result">
+            <img src="./assets/Muñeco.png" alt="" class="imagen_resultado">
+            <div class="contenido_resultado">
+                <h3 class="titulo_resultado">Ningún mensaje fue encontrado</h3>
+                <p class="texto_resultado">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <textarea class="form_salida" name="textosalida" id="" clos="30" rows="10"></textarea>
+                <button class="form__btn__secundary__hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
